@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
-             Title="ContratacaoHospedagem"
+             Title="Hotel Acordess"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource MidnightBlue}">
 
@@ -50,45 +50,34 @@
                 </Grid>
 
                 <Frame Padding="10" Margin="10">
-                    <VerticalStackLayout>
-                        <Label Text="Escolha sua Suíte"
-               TextTransform="Uppercase"
-               FontSize="Subtitle"
-               TextColor="{StaticResource Primary}" />
-
-                        <Picker x:Name="pck_quarto"
-                Title="Selecione sua Acomodação" />
-                    </VerticalStackLayout>
-                </Frame>
-
-                <Frame Padding="10" Margin="10">
                     <VerticalStackLayout Spacing="10">
                         <Label Text="Período da Estadia"
-                               TextTransform="Uppercase"
-                               FontSize="Subtitle"
-                               TextColor="{StaticResource Primary}" />
+               TextTransform="Uppercase"
+               FontSize="Subtitle"
+               TextColor="{StaticResource Primary}" 
+               HorizontalOptions="Center" />
 
-                        <!-- Check-in -->
-                        <StackLayout
-                            Orientation="Horizontal"
-                            HorizontalOptions="CenterAndExpand"
-                            Spacing="10">
-                            <Label Text="Check-in:" />
-                            <DatePicker x:Name="dtpck_checkin"
-                                        Format="dd/MM/yyyy" />
-                        </StackLayout>
+                        <!-- Check-in e Check-out lado a lado -->
+                        <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                            <!-- Check-in -->
+                            <VerticalStackLayout>
+                                <Label Text="Check-in:" HorizontalOptions="Center"/>
+                                <DatePicker x:Name="dtpck_checkin"
+                            Format="dd/MM/yyyy"
+                            HorizontalOptions="Center" />
+                            </VerticalStackLayout>
 
-                        <!-- Check-out -->
-                        <StackLayout
-                            Orientation="Horizontal"
-                            HorizontalOptions="CenterAndExpand"
-                            Spacing="10">
-                            <Label Text="Check-out:" />
-                            <DatePicker x:Name="dtpck_checkout"
-                                        Format="dd/MM/yyyy" />
-                        </StackLayout>
+                            <!-- Check-out -->
+                            <VerticalStackLayout>
+                                <Label Text="Check-out:" HorizontalOptions="Center"/>
+                                <DatePicker x:Name="dtpck_checkout"
+                            Format="dd/MM/yyyy"
+                            HorizontalOptions="Center" />
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
+
 
                 <Button Text="Avançar" />
 

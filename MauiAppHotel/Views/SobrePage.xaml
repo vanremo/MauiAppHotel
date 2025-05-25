@@ -22,5 +22,15 @@
         <Label Text="Este aplicativo calcula a diária de hospedagem de forma simples e rápida, considerando adultos, crianças, tipo de dormitório e período da estadia."
                FontSize="14"
                HorizontalTextAlignment="Center" />
+
+        <!-- Botão VOLTAR -->
+        <Button Text="Voltar para Calculadora"
+                Clicked="OnVoltarClicked"
+                BackgroundColor="#E74C3C"
+                TextColor="White"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="20"/>
     </VerticalStackLayout>
+
 </ContentPage>
