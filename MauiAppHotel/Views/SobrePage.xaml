@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobrePage"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+        <Label Text="Hotel Acordess"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Label Text="App Maui"
+               FontSize="18"
+               HorizontalOptions="Center" />
+
+        <Label Text="Desenvolvido por : Vanessa Reginato Aguilar"
+               FontSize="16"
+               HorizontalOptions="Center" />
+
+        <Label Text="Este aplicativo calcula a diária de hospedagem de forma simples e rápida, considerando adultos, crianças, tipo de dormitório e período da estadia."
+               FontSize="14"
+               HorizontalTextAlignment="Center" />
+    </VerticalStackLayout>
+</ContentPage>

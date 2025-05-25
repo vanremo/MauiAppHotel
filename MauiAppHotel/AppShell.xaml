@@ -3,13 +3,20 @@
     x:Class="MauiAppHotel.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiAppHotel"
+    xmlns:views="clr-namespace:MauiAppHotel.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="MauiAppHotel">
 
+    <!-- Página de contratação de hospedagem -->
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Hospedagem"
+        Route="ContratacaoHospedagem"
+        ContentTemplate="{DataTemplate views:ContratacaoHospedagem}" />
+
+    <!-- Página Sobre -->
+    <ShellContent
+        Title="Sobre"
+        Route="SobrePage"
+        ContentTemplate="{DataTemplate views:SobrePage}" />
 
 </Shell>
