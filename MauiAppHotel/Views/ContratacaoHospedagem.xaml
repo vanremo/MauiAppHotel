@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
@@ -7,7 +8,7 @@
              BackgroundColor="{StaticResource MidnightBlue}">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
-                         Padding="10"
+                         Padding="20"
                          Spacing="10">
 
         <Label Text="Cálculo da Diária"
@@ -50,12 +51,25 @@
                 </Grid>
 
                 <Frame Padding="10" Margin="10">
+                    <VerticalStackLayout>
+
+                        <Label Text="Escolha sua Suíte"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Primary}"/>
+
+                        <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10" Margin="10">
                     <VerticalStackLayout Spacing="10">
                         <Label Text="Período da Estadia"
-               TextTransform="Uppercase"
-               FontSize="Subtitle"
-               TextColor="{StaticResource Primary}" 
-               HorizontalOptions="Center" />
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource Primary}" 
+                               HorizontalOptions="Center" />    
 
                         <!-- Check-in e Check-out lado a lado -->
                         <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
@@ -78,10 +92,14 @@
                     </VerticalStackLayout>
                 </Frame>
 
-
-                <Button Text="Avançar" />
-
+        <Button Text="Calcular"
+        Clicked="OnCalcularClicked"
+        BackgroundColor="#27AE60"
+        TextColor="White"
+        FontAttributes="Bold"
+        Padding="10" />
             </VerticalStackLayout>
+            
         </Frame>
 
         <Button Text="Sobre"
@@ -90,8 +108,8 @@
                 TextColor="White"
                 FontAttributes="Bold"
                 Padding="10" />
-        
-        
+
+
 
     </VerticalStackLayout>
 

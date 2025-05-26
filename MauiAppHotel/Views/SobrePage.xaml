@@ -3,28 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.SobrePage"
              Title="Sobre"
-             BackgroundColor="{StaticResource Gray100}">
+             BackgroundColor="{StaticResource Primary}">
 
     <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center">
         <Label Text="Hotel Acordess"
-               FontSize="32"
+               FontSize="50"
                FontAttributes="Bold"
+               FontFamily="OleoScript"
+               TextColor="Yellow"
                HorizontalOptions="Center" />
 
-        <Label Text="App Maui"
+        <Label Text="App Maui/ Atividade : Agenda 13 de Desenvolvimento de Sistemas "
                FontSize="18"
+               TextColor="White"
                HorizontalOptions="Center" />
 
-        <Label Text="Desenvolvido por : Vanessa Reginato Aguilar"
-               FontSize="16"
+        <Label Text="Desenvolvedor: Vanessa Reginato Aguilar"
+               FontSize="20"
+               TextColor= "Orange"
+               FontFamily="OleoScriptbold"
                HorizontalOptions="Center" />
 
-        <Label Text="Este aplicativo calcula a diária de hospedagem de forma simples e rápida, considerando adultos, crianças, tipo de dormitório e período da estadia."
-               FontSize="14"
+        <Label Text="Maio/2025"
+               FontSize="30"
+               FontFamily="OleoScript"
+               TextColor="LemonChiffon"
                HorizontalTextAlignment="Center" />
 
         <!-- Botão VOLTAR -->
-        <Button Text="Voltar para Calculadora"
+        <Button Text="Voltar"
                 Clicked="OnVoltarClicked"
                 BackgroundColor="#E74C3C"
                 TextColor="White"

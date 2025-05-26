@@ -1,0 +1,36 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.ResultadoPage"
+             Title="Resultado"
+             BackgroundColor="{StaticResource Primary}">
+
+    <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+
+        <Label x:Name="lbl_dias"
+               FontSize="22"
+               TextColor="White"
+               HorizontalOptions="Center" />
+        <Label x:Name="lbl_criancas"
+               FontSize="20"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Label x:Name="lbl_diaria"
+               FontSize="22"
+               TextColor="White"
+               HorizontalOptions="Center" />
+
+        <Label x:Name="lbl_valor"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="Yellow"
+               HorizontalOptions="Center" />
+
+        <Button Text="Voltar"
+                Clicked="OnVoltarClicked"
+                BackgroundColor="#E74C3C"
+                TextColor="White"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

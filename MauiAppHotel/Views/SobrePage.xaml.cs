@@ -12,8 +12,7 @@ namespace MauiAppHotel.Views
 
         private async void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Navega de volta para a página principal (calculadora)
-            await Shell.Current.GoToAsync("//MainPage");
+            await Shell.Current.GoToAsync("//ContratacaoHospedagem");
         }
     }
 }
