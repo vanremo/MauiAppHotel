@@ -6,29 +6,44 @@
              BackgroundColor="{StaticResource Primary}">
 
     <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="Center">
-        <Label Text="Hotel Acordess"
-               FontSize="50"
+        <Label Text="Desenvolvedora: Vanessa Reginato Aguilar"
+               FontSize="30"
                FontAttributes="Bold"
                FontFamily="OleoScript"
                TextColor="Yellow"
                HorizontalOptions="Center" />
 
-        <Label Text="App Maui/ Atividade : Agenda 13 de Desenvolvimento de Sistemas "
+        <Label Text="Curso: Técnico em Desenvolvimento de Sistemas"
                FontSize="18"
                TextColor="White"
                HorizontalOptions="Center" />
 
-        <Label Text="Desenvolvedor: Vanessa Reginato Aguilar"
+        <Label Text="Data: Maio/2025"
                FontSize="20"
                TextColor= "Orange"
                FontFamily="OleoScriptbold"
                HorizontalOptions="Center" />
 
-        <Label Text="Maio/2025"
+        <Label Text="Finalidade do aplicativo:"
                FontSize="30"
                FontFamily="OleoScript"
+               TextColor="White"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Este aplicativo foi desenvolvido como atividade prática para a Agenda 13 do curso de Desenvolvimento de Sistemas. Seu objetivo é simular o processo de contratação de hospedagens em um hotel, permitindo ao usuário escolher a quantidade de adultos e crianças, o tipo de suíte desejada, o período da estadia e visualizar o valor total da hospedagem com base nesses dados.
+        "
+               FontSize="15"
+               FontFamily="kalam"
                TextColor="LemonChiffon"
                HorizontalTextAlignment="Center" />
+
+        <Label Text=" A proposta é aplicar os conhecimentos adquiridos em interfaces gráficas, manipulação de dados, lógica de programação e navegação entre páginas no ambiente .NET MAUI."
+                FontSize="15"
+                FontFamily="kalam"
+                TextColor="LemonChiffon"
+                HorizontalTextAlignment="Center" />
+
+
 
         <!-- Botão VOLTAR -->
         <Button Text="Voltar"

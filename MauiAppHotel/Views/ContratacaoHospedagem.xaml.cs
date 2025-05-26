@@ -18,9 +18,9 @@ public partial class ContratacaoHospedagem : ContentPage
         InitializeComponent();
 
         // Preenche o Picker com as opções
-        foreach (var suite in precosSuites.Keys)
+        foreach (var suite in precosSuites)
         {
-            pck_quarto.Items.Add(suite);
+            pck_quarto.Items.Add($"{suite.Key} - R$ {suite.Value:0.00}");
         }
     }
 
@@ -28,7 +28,8 @@ public partial class ContratacaoHospedagem : ContentPage
     {
         int adultos = (int)stp_adultos.Value;
         int criancas = (int)stp_criancas.Value;
-        string suiteEscolhida = pck_quarto.SelectedItem as string;
+        string suiteSelecionadaCompleta = pck_quarto.SelectedItem as string;
+        string suiteEscolhida = suiteSelecionadaCompleta?.Split(" -")[0];
 
         if (suiteEscolhida == null)
         {
