@@ -36,7 +36,6 @@ public partial class ContratacaoHospedagem : ContentPage
             await DisplayAlert("Erro", "Selecione uma suíte.", "OK");
             return;
         }
-
         DateTime checkin = dtpck_checkin.Date;
         DateTime checkout = dtpck_checkout.Date;
         int totalDias = (checkout - checkin).Days;
@@ -59,8 +58,7 @@ public partial class ContratacaoHospedagem : ContentPage
             $"precoDiaria={precoPorDia:0.00}&" +
             $"valorCriancas={totalCriancas:0.00}");
     }
-
-    private async void OnSobreClicked(object sender, EventArgs e)
+     private async void OnSobreClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("//SobrePage");
     }
